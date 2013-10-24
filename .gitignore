@@ -1,0 +1,35 @@
+ls
+###################
+# Intellij Config #
+###################
+*.iml
+*.ipr
+*.iws
+*.ids
+.idea
+.idea/**/*
+###########################
+# Project Intellij Config #
+###########################
+module_*.xml
+#server.properties
+#server.xml
+
+################
+# maven config #
+################
+target
+
+###################
+# Netbeans config #
+###################
+lib
+nbactions.xml
+nb-configuration.xml
+catalog.xml
+
+####################
+# Compression file #
+####################
+*.zip
+*.rar
