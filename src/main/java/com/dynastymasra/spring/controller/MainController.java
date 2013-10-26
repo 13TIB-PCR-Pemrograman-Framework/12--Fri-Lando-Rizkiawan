@@ -24,34 +24,4 @@ public class MainController {
         logger.debug("Request show home page");
         return "home-tile";
     }
-
-    @RequestMapping(value = "idc", method = RequestMethod.GET)
-    public String database(ModelMap modelMap) {
-        logger.debug("Request show informatic database club");
-        return "idc-tile";
-    }
-
-    @RequestMapping(value = "wsc", method = RequestMethod.GET)
-    public String web(ModelMap modelMap) {
-        logger.debug("Request show informatic database club");
-        return "web-tile";
-    }
-
-    @RequestMapping(value = "lsc", method = RequestMethod.GET)
-    public String linux(ModelMap modelMap) {
-        logger.debug("Request show informatic database club");
-        return "linux-tile";
-    }
-
-    @RequestMapping(value = "msc", method = RequestMethod.GET)
-    public String mulmed(ModelMap modelMap) {
-        logger.debug("Request show informatic database club");
-        return "mulmed-tile";
-    }
-
-    @RequestMapping(value = "update", method = RequestMethod.GET)
-    public String update(ModelMap modelMap) {
-        logger.debug("Received request to show update");
-        return "update-tile";
-    }
 }

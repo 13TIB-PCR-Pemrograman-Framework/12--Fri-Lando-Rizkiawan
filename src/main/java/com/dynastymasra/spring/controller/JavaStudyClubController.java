@@ -100,7 +100,7 @@ public class JavaStudyClubController {
 
         JavaStudyClub javaStudyClub = javaStudyClubService.findById(id);
         modelMap.addAttribute("java", javaStudyClub);
-        modelMap.addAttribute("menuClassJava", "active");
+        modelMap.addAttribute("menuJavaClass", "active");
 
         return "java-data-tile";
     }

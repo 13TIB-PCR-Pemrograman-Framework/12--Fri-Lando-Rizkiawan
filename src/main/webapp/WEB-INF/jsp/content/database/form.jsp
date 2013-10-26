@@ -12,40 +12,23 @@
 <br><br>
 <div class="jumbotron">
     <div class="alert alert-info">
-        <h4>Insert Mahasiswa Data</h4>
+        <h4>Insert Informatic Database Club</h4>
     </div>
-    <form:form modelAttribute="mahasiswa" method="POST" action="${mahasiswaUrl}" class="form-horizontal" role="form">
+    <form:form modelAttribute="database" method="POST" action="${databaseUrl}" class="form-horizontal" role="form">
         <div class="form-group">
-            <form:label class="col-sm-2 control-label" path="nim">NIM</form:label>
+            <form:label class="col-sm-2 control-label" path="mahasiswa.id">NIM</form:label>
             <div class="col-sm-5">
-                <form:input type="text" class="form-control" placeholder="NIM" path="nim"></form:input>
-            </div>
-        </div>
-        <div class="form-group">
-            <form:label class="col-sm-2 control-label" path="name">Name</form:label>
-            <div class="col-sm-5">
-                <form:input type="text" class="form-control" placeholder="Name" path="name"></form:input>
-            </div>
-        </div>
-        <div class="form-group">
-            <form:label for="inputEmail1" class="col-sm-2 control-label" path="email">Email</form:label>
-            <div class="col-sm-5">
-                <form:input type="email" class="form-control" id="inputEmail1" placeholder="Email" path="email"></form:input>
-            </div>
-        </div>
-        <div class="form-group">
-            <form:label class="col-sm-2 control-label" path="sex">Gender</form:label>
-            <div class="col-sm-5">
-                <form:select type="text" class="form-control" path="sex">
-                    <form:option value="MALE">Male</form:option>
-                    <form:option value="FEMALE">Female</form:option>
+                <form:select type="text" path="mahasiswa.id">
+                    <c:forEach items="${mahasiswaList}" var="mahasiswa">
+                        <form:option value="${mahasiswa.id}">${mahasiswa.nim}</form:option>
+                    </c:forEach>
                 </form:select>
             </div>
         </div>
         <div class="form-group">
-            <form:label class="col-sm-2 control-label" path="number">Phone</form:label>
+            <form:label class="col-sm-2 control-label" path="year">Year</form:label>
             <div class="col-sm-5">
-                <form:input type="text" class="form-control" placeholder="Phone" path="number"></form:input>
+                <form:input type="text" class="form-control" placeholder="Year" path="year"></form:input>
             </div>
         </div>
         <input class="btn btn-warning" type="reset" value="Reset"/>

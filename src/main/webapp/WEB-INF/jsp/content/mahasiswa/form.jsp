@@ -18,7 +18,7 @@
         <div class="form-group">
             <form:label class="col-sm-2 control-label" path="nim">NIM</form:label>
             <div class="col-sm-5">
-                <form:input type="text" class="form-control" placeholder="NIM" path="nim"></form:input>
+                <form:input type="number" class="form-control" placeholder="NIM" path="nim"></form:input>
             </div>
         </div>
         <div class="form-group">

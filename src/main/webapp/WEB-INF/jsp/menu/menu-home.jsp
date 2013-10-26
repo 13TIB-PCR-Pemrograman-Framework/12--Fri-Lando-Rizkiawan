@@ -13,9 +13,9 @@
     <ul class="nav navbar-nav">
         <li class="${menuJavaClass}"><a href="<c:url value='/jsc'/>">Java Study Club</a></li>
         <li class="${menuDatabaseClass}"><a href="<c:url value='/idc'/>">Informatic Database Club</a></li>
-        <li><a href="<c:url value='/wsc'/>">Web Study Club</a></li>
-        <li><a href="<c:url value='/lsc'/>">Linux Study Club</a></li>
-        <li><a href="<c:url value='/msc'/>" class="pull-right">Multimedia Study Club</a></li>
+        <li class="${menuWebClass}"><a href="<c:url value='/ksw'/>">Web Study Club</a></li>
+        <li class="${menuLinuxClass}"><a href="<c:url value='/ksl'/>">Linux Study Club</a></li>
+        <li class="${menuMulmedClass}"><a href="<c:url value='/ksm'/>" class="pull-right">Multimedia Study Club</a></li>
     </ul>
     <p class="navbar-text pull-right"><a href="<c:url value='/mahasiswa'/>">Mahasiswa</a></p>
 </nav>

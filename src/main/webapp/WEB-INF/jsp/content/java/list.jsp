@@ -37,13 +37,13 @@
                     <td align="center">${java.mahasiswa.sex}</td>
                     <td align="center">${java.mahasiswa.number}</td>
                     <td align="center">
-                        <a href="<c:url value='/jsc?id=${mahasiswa.id}'/>">
+                        <a href="<c:url value='/jsc?id=${java.id}'/>">
                             <button class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"/></button>
                         </a>
-                        <a href="<c:url value='/jsc/form?id=${mahasiswa.id}'/>">
+                        <a href="<c:url value='/jsc/form?id=${java.id}'/>">
                             <button class="btn btn-warning"><span class="glyphicon glyphicon-pencil"/></button>
                         </a>
-                        <a href="<c:url value='/jsc/delete?id=${mahasiswa.id}'/>">
+                        <a href="<c:url value='/jsc/delete?id=${java.id}'/>">
                             <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
                         </a>
                     </td>

@@ -12,9 +12,9 @@
 <br><br>
 <div class="jumbotron">
     <div class="alert alert-info">
-        <h4>Insert Java Study Club</h4>
+        <h4>Insert Multimedia Study Club</h4>
     </div>
-    <form:form modelAttribute="java" method="POST" action="${javaUrl}" class="form-horizontal" role="form">
+    <form:form modelAttribute="mulmed" method="POST" action="${mulmedUrl}" class="form-horizontal" role="form">
         <div class="form-group">
             <form:label class="col-sm-2 control-label" path="mahasiswa.id">NIM</form:label>
             <div class="col-sm-5">

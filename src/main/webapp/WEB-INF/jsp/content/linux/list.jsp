@@ -12,7 +12,7 @@
 <div class="jumbotron">
     <div class="alert alert-info">
         <h4>
-            Informatic Database Club List<a href="<c:url value='/idc/form'/>" class="pull-right"><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button></a>
+            Linux Study Club List<a href="<c:url value='/ksl/form'/>" class="pull-right"><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button></a>
         </h4>
     </div>
     <table class="table table-striped">
@@ -27,23 +27,23 @@
         </thead>
         <tbody>
 
-            <c:forEach items="${databaseList}" var="database">
+            <c:forEach items="${linuxList}" var="linux">
                 <c:set var="no" value="${no + 1}"/>
                 <tr>
                     <td align="center">${no}</td>
-                    <td align="center">${database.mahasiswa.nim}</td>
-                    <td>${database.mahasiswa.name}</td>
-                    <td align="center">${database.mahasiswa.email}</td>
-                    <td align="center">${database.mahasiswa.sex}</td>
-                    <td align="center">${database.mahasiswa.number}</td>
+                    <td align="center">${linux.mahasiswa.nim}</td>
+                    <td>${linux.mahasiswa.name}</td>
+                    <td align="center">${linux.mahasiswa.email}</td>
+                    <td align="center">${linux.mahasiswa.sex}</td>
+                    <td align="center">${linux.mahasiswa.number}</td>
                     <td align="center">
-                        <a href="<c:url value='/idc?id=${database.id}'/>">
+                        <a href="<c:url value='/ksl?id=${linux.id}'/>">
                             <button class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"/></button>
                         </a>
-                        <a href="<c:url value='/idc/form?id=${database.id}'/>">
+                        <a href="<c:url value='/ksl/form?id=${linux.id}'/>">
                             <button class="btn btn-warning"><span class="glyphicon glyphicon-pencil"/></button>
                         </a>
-                        <a href="<c:url value='/idc/delete?id=${database.id}'/>">
+                        <a href="<c:url value='/ksl/delete?id=${linux.id}'/>">
                             <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
                         </a>
                     </td>
