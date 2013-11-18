@@ -9,5 +9,5 @@ package com.dynastymasra.spring.domain.enumeration;
  */
 
 public enum Sex {
-    Male, Female
+    MALE, FEMALE
 }

@@ -42,7 +42,7 @@ public class MahasiswaController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String create(@ModelAttribute("mahasiswa") Mahasiswa mahasiswa, ModelMap modelMap) throws SQLException {
+    public String create(@ModelAttribute("mahasiswa") Mahasiswa mahasiswa, ModelMap modelMap){
         logger.debug("Request create mahasiswa");
 
         mahasiswaService.save(mahasiswa);
