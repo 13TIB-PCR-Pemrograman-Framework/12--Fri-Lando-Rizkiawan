@@ -37,8 +37,8 @@
             <form:label class="col-sm-2 control-label" path="sex">Gender</form:label>
             <div class="col-sm-5">
                 <form:select type="text" class="form-control" path="sex">
-                    <form:option value="MALE">Male</form:option>
-                    <form:option value="FEMALE">Female</form:option>
+                    <form:option value="Male">Male</form:option>
+                    <form:option value="Female">Female</form:option>
                 </form:select>
             </div>
         </div>
