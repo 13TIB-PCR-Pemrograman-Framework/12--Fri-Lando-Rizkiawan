@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Welcome Frilando to Spring Web MVC project 3TIB </title>
+        <title>Welcome Frilando to Spring Web MVC project 3TIB issi </title>
     </head>
 
     <body>
