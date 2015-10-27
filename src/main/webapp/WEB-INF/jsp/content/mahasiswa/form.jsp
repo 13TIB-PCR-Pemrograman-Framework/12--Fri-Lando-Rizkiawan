@@ -14,7 +14,7 @@
     <div class="alert alert-info">
         <h4>Insert Mahasiswa Data</h4>
     </div>
-    <form:form modelAttribute="mahasiswa" method="POST" action="${mahasiswaUrl}" class="form-horizontal" role="form">
+    <form:form modelAttribute="mahasiswa" method="POST" action="..${mahasiswaUrl}" class="form-horizontal" role="form">
         <div class="form-group">
             <form:label class="col-sm-2 control-label" path="nim">NIM</form:label>
             <div class="col-sm-5">
